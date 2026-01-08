@@ -1,0 +1,100 @@
+body{
+    background: rgb(155, 155, 155);
+}
+
+
+.cursor {
+    cursor: pointer;
+}
+
+.search-input {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 220px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    display: none;
+    background: white;
+}
+.icon{
+    width:22px;
+    height:22px;
+    cursor:pointer;
+    margin-left: 40px;
+}
+.txt{
+  margin-left: 40px;
+}
+.nav-link:hover{
+  transition: color 0.6s ease;
+  color: rgba(184, 142, 47, 1);
+}
+.icon:hover{
+  transition: transform 0.6s ease;
+  transform: translateY(-2px);
+}
+.icon{
+  transition: transform 0.6s ease;
+}
+.nav-link{
+  transition: color 0.6s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start  */
+
+.blockc{
+    max-width: 100%;
+    width: 100%;
+    background-image: url(photo/Rectangle\ 1.png);
+    background-position: none;
+    background-repeat: initial;
+    background-size: cover;
+    height: 460px;
+    /* border: 2px solid red; */
+    opacity: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.txt{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    transition: color 0.6s ease;
+}
+.txt0 {
+    font-size: 48px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 1);
+}
+.txt:hover{
+    color: rgb(97, 97, 97);
+    transition: color 0.6s ease;
+}

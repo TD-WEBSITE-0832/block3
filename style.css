@@ -324,3 +324,418 @@ body{
   transition: all 0.6s ease-in-out;
 }
 
+/* finish  */
+
+
+
+/* start  */
+
+.block4 {
+  display: flex;
+  gap: 300px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  background: rgb(177, 177, 177);
+  max-width: 100%;
+  width: 100%;
+  height: 800px;
+}
+
+.card4 {
+  position: relative;
+}
+
+.main-img {
+  width: 380px;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* thumbnails */
+.thumbs {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.thumb {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0.5;
+  border: 2px solid transparent;
+}
+
+.thumb.active {
+  opacity: 1;
+  border-color: #b88e2f;
+}
+
+/* dots */
+.dots {
+  display: flex;
+  gap: 8px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #b88e2f;
+}
+
+
+.tx10{
+  margin-top: -20px;
+}
+.xt{
+  font-size: 40px;
+  font-weight: 800;
+}
+
+
+/* finish  */
+
+
+/* start  */
+.xt1{
+  font-size: 20px;
+  text-align: center;
+  color: rgba(97, 97, 97, 1);
+  margin-top: 60px;
+}
+.xt2{
+  text-align: center;
+  color: rgba(97, 97, 97, 1);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* finish  */
+
+
+
+/* start  */
+
+
+.block5{
+   max-width: 100%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 35px;
+}
+
+
+.gallery {
+    display: grid;
+    /* 4 ta teng ustun va ular ekran kengligini to'liq egallaydi */
+    grid-template-columns: repeat(4, 1fr);
+    
+    /* Rasmlar orasida masofa qolmasligi uchun */
+    gap: 0; 
+    
+    /* Butun ekranni egallashi uchun */
+    width: 100vw; 
+    
+    /* Qatorlar balandligi (o'zingizga yoqqanicha o'zgartiring) */
+    grid-auto-rows: 250px; 
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    /* Rasmlar cho'zilmasdan, o'z katagiga chiroyli sig'ishi uchun */
+    object-fit: cover;
+    display: block;
+    border: none;
+}
+
+/* Joylashuv (Rasmga moslab) */
+.img1 { 
+  transition: all 0.6s ease-in-out;
+  grid-column: 1 / 2; grid-row: 1 / 3; 
+}
+.img2 { 
+  transition: all 0.6s ease-in-out;
+  grid-column: 2 / 4; grid-row: 1 / 2; 
+}
+.img3 {
+  transition: all 0.6s ease-in-out;
+   grid-column: 4 / 5; grid-row: 1 / 3;
+  }
+.img4 {
+  transition: all 0.6s ease-in-out;
+   grid-column: 2 / 3; grid-row: 2 / 4; 
+  }
+.img5 { 
+  transition: all 0.6s ease-in-out;
+  grid-column: 3 / 4; grid-row: 2 / 3; 
+}
+.img6 {
+  transition: all 0.6s ease-in-out;
+   grid-column: 1 / 2; grid-row: 3 / 4; 
+  }
+.img7 { 
+  transition: all 0.6s ease-in-out;
+  grid-column: 2 / 3; grid-row: 4 / 5;
+ }
+.img8 { 
+  transition: all 0.6s ease-in-out;
+  grid-column: 3 / 4; grid-row: 3 / 5;
+ }
+.img9 { 
+  transition: all 0.6s ease-in-out;
+  grid-column: 4 / 5; grid-row: 3 / 4; 
+}
+
+
+
+.img1:hover{
+  transform: translateY(-10px) scale(1.05);
+  transition: all 0.6s ease-in-out;
+} 
+.img2:hover{
+  transform: translateY(-10px) scale(1.05);
+  transition: all 0.6s ease-in-out;
+} 
+.img3:hover{
+  transform: translateY(-10px) scale(1.05);
+  transition: all 0.6s ease-in-out;
+}
+.img4:hover{
+  transform: translateY(-10px) scale(1.05);
+  transition: all 0.6s ease-in-out;
+} 
+.img5:hover{
+  transform: translateY(-10px) scale(1.05);
+  transition: all 0.6s ease-in-out;
+} .img6:hover{
+  transform: translateY(-10px) scale(1.05);
+  transition: all 0.6s ease-in-out;
+} .img7:hover{
+  transform: translateY(-10px) scale(1.05);
+  transition: all 0.6s ease-in-out;
+} .img8:hover{
+  transform: translateY(-10px) scale(1.05);
+  transition: all 0.6s ease-in-out;
+} .img9:hover{
+  transform: translateY(-10px) scale(1.05);
+  transition: all 0.6s ease-in-out;
+} 
+
+/* finish  */
+
+
+
+
+
+
+
+
+
+
+
+/* start  */
+.block6 {
+    padding: 80px 100px 30px 100px;
+    background-color: #fff;
+    border-top: 1px solid #000000;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 100px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Mobil qurilmalarda pastga tushishi uchun */
+}
+
+.footer-info h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.footer-info p {
+    color: #9F9F9F;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer-links h4, 
+.footer-newsletter h4 {
+    color: #9F9F9F;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 40px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+/* Newsletter Input va Button */
+.subscribe-box {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid black; /* Faqat tagida chiziq bo'lishi uchun */
+}
+
+.subscribe-box input {
+    border: none;
+    outline: none;
+    padding: 5px 0;
+    font-size: 14px;
+    width: 200px;
+}
+
+.subscribe-box button {
+    border: none;
+    background: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+/* Footerning eng pasti */
+.footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid rgba(51, 51, 51, 1);
+}
+
+.footer-bottom hr {
+    border: 0;
+    border-top: 1px solid #D9D9D9;
+    margin-bottom: 30px;
+}
+
+.footer-bottom p {
+    font-size: 16px;
+    color: #000;
+}
+
+/* finish */
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .block {
+        width: 200%;
+        height: 600px;
+    }
+    .cardd {
+        width: 500px;
+        margin-top: 50px;
+    }
+    .block4 {
+        gap: 50px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .block4 {
+        flex-direction: column;
+        height: auto;
+        padding: 50px 0;
+        gap: 30px;
+    }
+    .main-img {
+        width: 90%; 
+        height: auto;
+    }
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); 
+        grid-auto-rows: 200px;
+    }
+    .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9 {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+        background: #fff;
+        padding: 20px;
+    }
+    
+    .block {
+        background-position: center;
+        justify-content: center;
+    }
+    
+    .cardd {
+        width: 90%;
+        margin-right: 0;
+        text-align: center;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .tx1 {
+        font-size: 28px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr; 
+        grid-auto-rows: 300px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links, .footer-newsletter {
+        margin-bottom: 30px;
+    }
+
+    .subscribe-box {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .bt {
+        width: 100%;
+        height: 50px;
+    }
+    .xt {
+        font-size: 24px;
+    }
+    .xt2 {
+        font-size: 28px;
+    }
+}
