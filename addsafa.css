@@ -1,0 +1,343 @@
+body{
+  background: rgba(189, 188, 188, 0.705);
+}
+.cursor {
+    cursor: pointer;
+}
+
+.search-input {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 220px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    display: none;
+    background: white;
+}
+.icon{
+    width:22px;
+    height:22px;
+    cursor:pointer;
+    margin-left: 40px;
+}
+.txt{
+  margin-left: 40px;
+}
+.nav-link:hover{
+  transition: color 0.6s ease;
+  color: rgba(184, 142, 47, 1);
+}
+.icon:hover{
+  transition: transform 0.6s ease;
+  transform: translateY(-2px);
+}
+.icon{
+  transition: transform 0.6s ease;
+}
+.nav-link{
+  transition: color 0.6s ease;
+}
+
+
+/* finish  */
+
+/* start  */
+.blockc {
+  width: 100%;
+  background: #f9f1e7;
+  padding: 25px 60px;
+}
+
+.car {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.car .link {
+  color: #9f9f9f;
+  text-decoration: none;
+}
+
+.car .link:hover {
+  color: #000;
+}
+
+.car .arrow {
+  color: #9f9f9f;
+}
+
+.car .active {
+  color: #000;
+  font-weight: 500;
+  border-left: 1px solid #ccc;
+  padding-left: 15px;
+}
+/* finish  */
+
+
+
+/* start  */
+
+
+.block1 {
+  max-width: 1200px;
+  margin: 80px auto;
+  display: flex;
+  gap: 40px;
+}
+
+/* chap kichik rasmlar */
+.car1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.im {
+  width: 70px;
+  height: 70px;
+  background: #f9f1e7;
+  padding: 10px;
+  border-radius: 10px;
+  object-fit: contain;
+  cursor: pointer;
+   transition: all 0.6s ease-in-out;
+
+}
+.im:hover{
+   transform: scale(1.2);
+   transition: all 0.6s ease-in-out;
+}
+
+/* katta rasm card */
+.car2 {
+  background: #f9f1e7;
+  border-radius: 20px;
+  padding: 60px;
+  width: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.im1 {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* o‘ng info */
+.car3 {
+  width: 420px;
+}
+
+/* title */
+.tx {
+  font-size: 32px;
+  margin: 0 0 10px;
+}
+
+/* price */
+.tx1 {
+  font-size: 20px;
+  color: #9f9f9f;
+  margin-bottom: 15px;
+}
+
+/* rating */
+.dir {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.star {
+  color: #ffc700;
+  font-size: 14px;
+}
+
+.review {
+  font-size: 13px;
+  color: #9f9f9f;
+}
+
+/* description */
+.desc {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* section titles */
+.tx3 {
+  font-size: 14px;
+  margin: 20px 0 10px;
+}
+
+/* size */
+.dir2 {
+  display: flex;
+  gap: 10px;
+}
+
+.di {
+  padding: 10px 15px;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.6s ease-in-out;
+}
+.di:hover, .di.active:hover{
+  background:  #b88e2f;
+  color: white;
+  transition: all 0.6s ease-in-out;
+
+}
+
+.di.active {
+  background:white;
+  color: black;
+  transition: all 0.6s ease-in-out;
+}
+
+/* color */
+.dir3 {
+  display: flex;
+  gap: 15px;
+}
+
+.di1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.c1 { background: #816dfa; 
+  transition: transform 0.6s ease;
+}
+.c2 { background: #000; 
+  transition: transform 0.6s ease;
+}
+.c3 { background: #b88e2f; 
+  transition: transform 0.6s ease;
+}
+
+.c1:hover, .c2:hover, .c3:hover{
+  transform: scale(1.2);
+  transition: transform 0.6s ease;
+}
+/* cart row */
+.car4 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+/* quantity */
+.de {
+  display: flex;
+  border: 1px solid #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.de button {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+  background: white;
+}
+.de button:hover{
+  background: rgb(136, 136, 136);
+  color: white;
+  transition: all 0.6s ease-in-out;
+}
+.de input:hover{
+  background: rgb(136, 136, 136);
+  color: white;
+  transition: all 0.6s ease-in-out;
+}
+.de input {
+  transition: all 0.6s ease-in-out;
+  width: 40px;
+  border: none;
+  text-align: center;
+}
+
+/* buttons */
+.bttr {
+  padding: 12px 28px;
+  border-radius: 12px;
+  /* border: 1px solid #000; */
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+  border: none;
+}
+.bttr:hover{
+  background: rgb(136, 136, 136);
+  color: white;
+  transition: all 0.6s ease-in-out;
+}
+.bttr.outline {
+  background: transparent;
+  background: whitesmoke;
+  transition: all 0.6s ease-in-out;
+}
+.bttr.outline:hover{
+  transition: all 0.6s ease-in-out;
+background: rgb(136, 136, 136);
+color: white;
+}
+/* bottom info */
+.car5 {
+  margin-top: 40px;
+  font-size: 13px;
+  color: #9f9f9f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

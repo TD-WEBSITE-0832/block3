@@ -1,5 +1,6 @@
 body{
   background: rgba(189, 188, 188, 0.705);
+  overflow-x: hidden
 }
 .cursor {
     cursor: pointer;
@@ -642,8 +643,14 @@ body{
 /* finish */
 
 
-
-
+/* start  */
+.rt{
+  transition: all 0.6s ease-in-out;
+}
+.rt:hover{
+  color: #b88e2f;
+  transition: all 0.6s ease-in-out;
+}
 
 
 @media (max-width: 1200px) {
