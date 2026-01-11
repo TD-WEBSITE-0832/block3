@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Furniro - Zamonaviy Mebel</title>
+<style>
+    /* BODY va umumiy style */
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background: #f0f0f0;
+        color: #333;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #fff;
+        padding: 15px 30px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    .navbar img {
+        width: 50px;
+    }
+    .navbar a {
+        text-decoration: none;
+        color: #ff4500;
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    /* PROGRESS BAR SECTION */
+    .progress-container {
+        max-width: 700px;
+        margin: 50px auto;
+        text-align: center;
+    }
+    .progress-text {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    .progress-bar {
+        width: 100%;
+        background: #ddd;
+        border-radius: 25px;
+        overflow: hidden;
+    }
+    .progress-bar-fill {
+        height: 30px;
+        width: 0;
+        background: linear-gradient(90deg, #ff7f50, #ff4500);
+        line-height: 30px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        transition: width 0.3s ease;
+    }
+    .start-btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: #ff4500;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .start-btn:hover {
+        background: #ff6347;
+    }
+
+    /* ABOUT SECTION */
+    .about {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 30px;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+    .about h2 {
+        color: #ff4500;
+        margin-bottom: 15px;
+    }
+    .about p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    /* GALLERY SECTION */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        max-width: 1000px;
+        margin: 50px auto;
+    }
+    .gallery img {
+        width: 100%;
+        border-radius: 12px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    /* FOOTER */
+    .footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 25px 10px;
+    }
+
+
+    
+
+
+
+/* start  */
+.block6 {
+    padding: 80px 100px 30px 100px;
+    background-color: #fff;
+    border-top: 1px solid #000000;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 100px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Mobil qurilmalarda pastga tushishi uchun */
+}
+
+.footer-info h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.footer-info p {
+    color: #9F9F9F;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer-links h4, 
+.footer-newsletter h4 {
+    color: #9F9F9F;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 40px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+/* Newsletter Input va Button */
+.subscribe-box {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid black; /* Faqat tagida chiziq bo'lishi uchun */
+}
+
+.subscribe-box input {
+    border: none;
+    outline: none;
+    padding: 5px 0;
+    font-size: 14px;
+    width: 200px;
+}
+
+.subscribe-box button {
+    border: none;
+    background: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+/* Footerning eng pasti */
+.footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid rgba(51, 51, 51, 1);
+}
+
+.footer-bottom hr {
+    border: 0;
+    border-top: 1px solid #D9D9D9;
+    margin-bottom: 30px;
+}
+
+.footer-bottom p {
+    font-size: 16px;
+    color: #000;
+}
+
+/* finish */
+
+
+/* start  */
+.rt{
+  transition: all 0.6s ease-in-out;
+}
+.rt:hover{
+  color: #b88e2f;
+  transition: all 0.6s ease-in-out;
+}
+    /* RESPONSIVE MEDIA */
+    @media(max-width: 768px){
+        .navbar a {
+            font-size: 18px;
+        }
+        .progress-text {
+            font-size: 20px;
+        }
+        .about p {
+            font-size: 16px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <img src="http://127.0.0.1:5500/photo/2727769ba74736d502746301ed573ed8940fc322.png" alt="Logo">
+    <a href="#">Furniro</a>
+</div>
+
+<!-- PROGRESS BAR SECTION -->
+<div class="progress-container">
+    <div class="progress-text">Yuklanmoqda: <span id="percent">0%</span></div>
+    <div class="progress-bar">
+        <div class="progress-bar-fill" id="progressFill">0%</div>
+    </div>
+    <button class="start-btn" onclick="startProgress()">Boshlash</button>
+</div>
+
+<!-- ABOUT SECTION -->
+<div class="about">
+    <h2>Furniro haqida</h2>
+    <p>
+        Furniro zamonaviy va sifatli mebel ishlab chiqaradi. Bizning maqsadimiz – sizga
+        uy va ofisingiz uchun qulay, chiroyli va bardoshli mebellarni yetkazib berish.
+        Progress bar yordamida sahifadagi yuklanish effektini ko‘rib, saytimiz
+        interaktivligini his qilasiz.
+    </p>
+</div>
+
+<!-- GALLERY SECTION -->
+<div class="gallery">
+    <img src="photo/784384ee37569bf147f74d2ca44831a4a6ef3ee5 (1).png" alt="Mebel 1">
+    <img src="photo/1461f3d6ff74c027a1888544144abe4be6e02cbf.jpg" alt="Mebel 2">
+    <img src="photo/a4bb28142f4aae4edaceced4645de9ad49216504.png" alt="Mebel 3">
+    <img src="photo/98fb219fa11f805aade2224f1d6658764a2395df.jpg" alt="Mebel 4">
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    &copy; 2026 Furniro. Barcha huquqlar himoyalangan.
+</div>
+
+
+
+
+
+<footer class="block6">
+    <div class="footer-container">
+        <div class="footer-info">
+            <h2>Funiro.</h2>
+            <p>400 University Drive Suite 200 Coral Gables,<br>FL 33134 USA</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Links</h4>
+            <ul>
+                <li><a href="index.html" class="rt">Home</a></li>
+                <li><a href="shop.html" class="rt">Shop</a></li>
+                <li><a href="ss.html" class="rt">About</a></li>
+                <li><a href="loh.html" class="rt">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h4>Help</h4>
+            <ul>
+                <li><a href="#" class="rt">Payment Options</a></li>
+                <li><a href="#" class="rt">Returns</a></li>
+                <li><a href="#" class="rt">Privacy Policies</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <div class="subscribe-box">
+                <input type="email" placeholder="Enter Your Email Address">
+                <button type="submit">SUBSCRIBE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <hr>
+        <p>2023 furino. All rights reserved</p>
+    </div>
+</footer>
+
+
+
+
+
+<script>
+    function startProgress() {
+        let percentElem = document.getElementById('percent');
+        let fillElem = document.getElementById('progressFill');
+        let width = 0;
+
+        let interval = setInterval(() => {
+            if(width >= 100) {
+                clearInterval(interval);
+            } else {
+                width++;
+                percentElem.textContent = width + '%';
+                fillElem.style.width = width + '%';
+                fillElem.textContent = width + '%';
+            }
+        }, 50);
+    }
+</script>
+
+</body>
+</html>
